@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#"onclick="reload()" class="company-logo">
+                <img src="logo1.jpg" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item " id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                    <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+
+
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="eg. IPL">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+
+    </nav>
+    <main>
+        <div class="card-container contaimer flex" id="cards-container">
+            
+        </div>
+    </main>
+            
+              
+            <template id="template-news-card">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+                    </div>
+                    <div class="car-content">
+                        <h3 id="title">THIS IS THE TITLE</h3>
+                        <h4 class="source" id="source">end gadget</h4>
+                        <p class="des" id="des">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci blanditiis tenetur delectus
+                            ipsa cumque! Aliquam, aspernatur a vitae cum exercitationem quos rem sint.
+                        </p>
+                    </div>
+                </div>
+            </template>
+            
+           
+        </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
